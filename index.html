@@ -337,7 +337,11 @@
         <div class="menu-content-area menu-content-area-layout is-hidden">
           <div class="menu-item">
             <h1 class="menu-header">Width</h1>
-            <div class="radio-wrap">
+            <div class="input-wrap">
+              <label for="control-layout-width">Width</label>
+              <input id="control-layout-width" class="control-layout-width" type="range" min="30" max="100" value="0" tabindex="1">
+            </div>
+            <!-- <div class="radio-wrap">
               <input id="control-layout-width-fluid" class="control-layout-width-fluid" type="radio" name="control-layout-width" value="fluid" tabindex="1">
               <label for="control-layout-width-fluid"><span class="label-icon"></span>Fluid</label>
             </div>
@@ -348,7 +352,7 @@
             <div class="radio-wrap">
               <input id="control-layout-width-thin" class="control-layout-width-thin" type="radio" name="control-layout-width" value="thin" tabindex="1">
               <label for="control-layout-width-thin"><span class="label-icon"></span>Thin</label>
-            </div>
+            </div> -->
           </div>
           <div class="menu-item">
             <h1 class="menu-header">Page</h1>
@@ -454,6 +458,7 @@
 <script src="js/keyboard.js"></script>
 <script src="js/background.js"></script>
 <script src="js/title.js"></script>
+<script src="js/layout.js"></script>
 <script src="js/init.js"></script>
 
 </html>

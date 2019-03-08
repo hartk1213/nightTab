@@ -414,25 +414,34 @@ var control = (function() {
       link.render();
     }
   }, {
-    element: helper.e(".control-layout-width-fluid"),
+  //   element: helper.e(".control-layout-width-fluid"),
+  //   path: "layout.width",
+  //   type: "radio",
+  //   func: function() {
+  //     render();
+  //   }
+  // }, {
+  //   element: helper.e(".control-layout-width-wide"),
+  //   path: "layout.width",
+  //   type: "radio",
+  //   func: function() {
+  //     render();
+  //   }
+  // }, {
+  //   element: helper.e(".control-layout-width-thin"),
+  //   path: "layout.width",
+  //   type: "radio",
+  //   func: function() {
+  //     render();
+  //   }
+  // }, {
+    element: helper.e(".control-layout-width"),
     path: "layout.width",
-    type: "radio",
+    type: "range",
     func: function() {
       render();
-    }
-  }, {
-    element: helper.e(".control-layout-width-wide"),
-    path: "layout.width",
-    type: "radio",
-    func: function() {
-      render();
-    }
-  }, {
-    element: helper.e(".control-layout-width-thin"),
-    path: "layout.width",
-    type: "radio",
-    func: function() {
-      render();
+      layout.render();
+      header.render();
     }
   }, {
     element: helper.e(".control-layout-scroll-past-end"),
@@ -595,10 +604,10 @@ var control = (function() {
           path: object.path,
           newValue: newValue
         });
-        // console.log(object.path, helper.getObject({
-        //   object: state.get(),
-        //   path: object.path
-        // }));
+        console.log(object.path, helper.getObject({
+          object: state.get(),
+          path: object.path
+        }));
       };
     };
     var bindControl = function(object) {
@@ -705,10 +714,10 @@ var control = (function() {
       };
     };
     var _layout = function() {
-      helper.removeClass(html, "is-layout-width-fluid");
-      helper.removeClass(html, "is-layout-width-wide");
-      helper.removeClass(html, "is-layout-width-thin");
-      helper.addClass(html, "is-layout-width-" + state.get().layout.width);
+      // helper.removeClass(html, "is-layout-width-fluid");
+      // helper.removeClass(html, "is-layout-width-wide");
+      // helper.removeClass(html, "is-layout-width-thin");
+      // helper.addClass(html, "is-layout-width-" + state.get().layout.width);
       if (state.get().layout.scrollPastEnd) {
         helper.addClass(html, "is-layout-scroll-past-end");
       } else {

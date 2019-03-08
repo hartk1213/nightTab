@@ -54,3 +54,6 @@ search.init();
 
 // render page title
 title.init();
+
+// render page title
+layout.init();

@@ -21,6 +21,7 @@
   --gray-18: 224, 228, 234;
   --gray-19: 237, 239, 242;
   --gray-20: 250, 250, 250;
+  --layout-width: calc(70vw - 2em);
   --accent: 0, 255, 0;
   --root-font-size: 14px;
   --radius: 0.2em;
